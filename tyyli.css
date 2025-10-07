@@ -3,4 +3,50 @@ p {
 }
 body {
   background-color: #9CC2E5;
+} 
+
+
+a:link {
+  color: #440ce0;
+  background-color: transparent;
+  text-decoration: none;
 }
+
+h1 {
+
+  color: #F7F9FA;
+}
+h2{
+
+  color: #F7F9FA;
+}
+h3 {
+
+  color: #F7F9FA;
+}
+h4 {
+
+  color: #F7F9FA;
+}
+h5 {
+
+  color: #F7F9FA;
+}
+h6 {
+
+  color: #F7F9FA;
+}
+
+div { 
+  border: 1px;
+  border-color: #F7F9FA;
+  border-style: solid;
+
+}
+.quote {background-image: url(Lentskari.jpg);
+  background-position: center;
+  background-size: cover;
+font-size: 60px;
+text-align: center;
+
+} 
