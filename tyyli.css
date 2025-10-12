@@ -1,28 +1,28 @@
 p {
-    color: #F7F9FA ;
+    color: #181818 ;
 }
 body {
-  background-color: #9CC2E5;
+  background-color: #ffffff;
 } 
 
 
 a:link {
-  color: #440ce0;
+  color: #3882dd;
   background-color: transparent;
   text-decoration: none;
 }
 
 h1 {
-
-  color: #F7F9FA;
+font-size: 34px;
+    color: #181818 ;
 }
 h2{
-
-  color: #F7F9FA;
+font-size: 26px;
+  color: #181818;
 }
 h3 {
 
-  color: #F7F9FA;
+  color: #181818;
 }
 h4 {
 
@@ -30,23 +30,127 @@ h4 {
 }
 h5 {
 
-  color: #F7F9FA;
+  color: #181818;
 }
 h6 {
 
-  color: #F7F9FA;
+  color: #181818;
 }
 
+/*
 div { 
   border: 1px;
   border-color: #F7F9FA;
   border-style: solid;
+} */
 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+html,body{
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
 }
-.quote {background-image: url(Lentskari.jpg);
+
+
+.quote {background-image: linear-gradient( rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.08) ), url(Lentskari.jpg);
   background-position: center;
   background-size: cover;
-font-size: 60px;
+font-size: 40px;
 text-align: center;
+padding: 80px 10px 80px 10px;
+margin-bottom: 20px;
 
 } 
+.content {
+  width: 90%;
+  margin: auto;
+  font-size: 16px;
+}
+
+.header img {
+  width: 20%;
+  padding: 20px 10px 20px 10px;
+}
+
+.footer {
+  background-color: #331489;
+  margin-top: 20px;
+}
+
+.footer p{
+  color: #F7F9FA;
+  text-align: center;
+  padding: 10px;
+  margin: 0px;
+
+}
+
+.header {
+  text-align: center;
+}
+
+@media only screen and (min-width: 650px) { 
+.content {
+  width: 75%;
+}
+
+h1 {
+font-size: 32px;
+}
+
+h2{
+font-size: 24px;
+}
+
+.quote {background-image: linear-gradient( rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.08) ), url(Lentskari.jpg);
+font-size: 50px;
+padding: 100px 10px 100px 10px;
+}
+.row {
+width: 75%;
+margin: auto;
+}
+} 
+
+@media only screen and (min-width: 1025px) { 
+.content {
+  width: 55%;
+}
+
+h1 {
+font-size: 34px;
+}
+
+h2{
+font-size: 26px;
+}
+
+.quote {background-image: linear-gradient( rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.08) ), url(Lentskari.jpg);
+  font-size: 55px;
+} 
+.column {
+  float: left;
+  width: 45%;
+  padding-right: 5%;
+}
+
+.row {
+width: 95%;
+margin: auto;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.row {
+width: 90%;
+margin: auto;
+font-size: 16px;
+
+}
+
+}
