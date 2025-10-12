@@ -14,15 +14,15 @@ a:link {
 
 h1 {
 font-size: 34px;
-    color: #181818 ;
+  color: #F7F9FA;
 }
 h2{
 font-size: 26px;
   color: #181818;
 }
 h3 {
-
   color: #181818;
+  text-align: center;
 }
 h4 {
 
@@ -52,6 +52,40 @@ html,body{
   font-family: "Open Sans", sans-serif;
 }
 
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #411aad;
+}
+
+ul li {
+  float: center;
+}
+
+ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  background-color: #d0cccc;
+}
+
+ul li a.active {
+  background-color: #2289dd;
+}
+
+.header {background-image: linear-gradient( rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.08) ), url(moderni.jpg);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  padding: 80px 10px 80px 10px;
+}
 
 .quote {background-image: linear-gradient( rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.08) ), url(Lentskari.jpg);
   background-position: center;
@@ -74,7 +108,7 @@ margin-bottom: 20px;
 }
 
 .footer {
-  background-color: #331489;
+  background-color: #411aad;
   margin-top: 20px;
 }
 
@@ -91,6 +125,11 @@ margin-bottom: 20px;
 }
 
 @media only screen and (min-width: 650px) { 
+
+  ul li {
+  float: left;
+}
+
 .content {
   width: 75%;
 }
