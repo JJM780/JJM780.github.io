@@ -7,7 +7,7 @@ body {
 
 
 a:link {
-  color: #3882dd;
+  color: #492bf3;
   background-color: transparent;
   text-decoration: none;
 }
@@ -19,6 +19,7 @@ font-size: 34px;
 h2{
 font-size: 26px;
   color: #181818;
+  text-align: center;
 }
 h3 {
   color: #181818;
@@ -37,12 +38,7 @@ h6 {
   color: #181818;
 }
 
-/*
-div { 
-  border: 1px;
-  border-color: #F7F9FA;
-  border-style: solid;
-} */
+
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
@@ -52,7 +48,7 @@ html,body{
   font-family: "Open Sans", sans-serif;
 }
 
-ul {
+nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -60,11 +56,11 @@ ul {
   background-color: #411aad;
 }
 
-ul li {
+nav ul li {
   float: center;
 }
 
-ul li a {
+nav ul li a {
   display: block;
   color: white;
   text-align: center;
@@ -72,11 +68,11 @@ ul li a {
   text-decoration: none;
 }
 
-ul li a:hover {
+nav ul li a:hover {
   background-color: #d0cccc;
 }
 
-ul li a.active {
+nav ul li a.active {
   background-color: #2289dd;
 }
 
@@ -87,30 +83,64 @@ ul li a.active {
   padding: 80px 10px 80px 10px;
 }
 
+
 .quote {background-image: linear-gradient( rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.08) ), url(Lentskari.jpg);
   background-position: center;
   background-size: cover;
-font-size: 40px;
+font-size: 30px;
 text-align: center;
-padding: 80px 10px 80px 10px;
-margin-bottom: 20px;
+padding: 50px 10px 50px 10px; 
+height: 100px;
+margin-bottom: 50px;
+margin-top: 50px;
 
 } 
 .content {
   width: 90%;
   margin: auto;
   font-size: 16px;
+  clear: both;
+}
+.content ul{ 
+   list-style-type: disc;   
+  padding-left: 40px;        
+  margin: 0;
+  display: block;
+}
+.content li {
+  margin-bottom: 6px;       
+  display: list-item;        
 }
 
-.header img {
-  width: 20%;
-  padding: 20px 10px 20px 10px;
+.coming-soon {
+  text-align: center;
+  padding: 120px 20px;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),  url('tietokone.jpg') center/cover no-repeat;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
 }
+
+.coming-soon h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: #cce6ff;
+}
+
+.coming-soon p {
+  font-size: 20px;
+  color: #cce6ff;
+}
+
+.tiedot {
+  text-align: center;
+}
+
 
 .footer {
-  background-color: #411aad;
-  margin-top: 20px;
+   background-color: #411aad;
+   margin-top: 40px;
 }
+ 
 
 .footer p{
   color: #F7F9FA;
@@ -119,10 +149,48 @@ margin-bottom: 20px;
   margin: 0px;
 
 }
+.row {
+width: 90%;
+margin: auto;
+padding-top: 20px;
+padding-bottom: 20px;
+text-align: center;
+}
+
+
 
 .header {
   text-align: center;
 }
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  max-width: 500px;
+  margin: auto;
+}
+
+.contact input, .contact textarea {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.contact button {
+  background-color: #331489;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.contact button:hover {
+  background-color: #4a2db3;
+}
+
 
 @media only screen and (min-width: 650px) { 
 
@@ -143,7 +211,7 @@ font-size: 24px;
 }
 
 .quote {background-image: linear-gradient( rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.08) ), url(Lentskari.jpg);
-font-size: 50px;
+font-size: 40px;
 padding: 100px 10px 100px 10px;
 }
 .row {
@@ -166,7 +234,9 @@ font-size: 26px;
 }
 
 .quote {background-image: linear-gradient( rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.08) ), url(Lentskari.jpg);
-  font-size: 55px;
+  font-size: 45px;
+  height: 100px;
+  text-align: center;
 } 
 .column {
   float: left;
@@ -175,11 +245,10 @@ font-size: 26px;
 }
 
 .row {
-width: 95%;
+width: 90%;
 margin: auto;
 }
 
-/* Clear floats after the columns */
 .row:after {
   content: "";
   display: table;
@@ -189,6 +258,8 @@ margin: auto;
 width: 90%;
 margin: auto;
 font-size: 16px;
+
+
 
 }
 
